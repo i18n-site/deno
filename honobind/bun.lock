@@ -1,0 +1,14 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@8v/honobind",
+      "dependencies": {
+        "@8v/honofn": "^0.1.1",
+      },
+    },
+  },
+  "packages": {
+    "@8v/honofn": ["@8v/honofn@0.1.1", "", {}, "sha512-wPaE8SEXt/0L/sBl0N7k8CA3C72VRhHfZKq54ExsN3Orhr4jGPrnWN+lHHwf5tAxlZBsxQKX+PpwqyWghbiPRA=="],
+  }
+}

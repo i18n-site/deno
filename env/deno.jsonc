@@ -1,0 +1,6 @@
+{
+  "name": "@8v/env",
+  "version": "0.1.2",
+  "exports": "./mod.ts",
+  "license": "MulanPSL-2.0"
+}

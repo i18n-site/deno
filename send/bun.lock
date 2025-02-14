@@ -1,0 +1,22 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@8v/send",
+      "dependencies": {
+        "@8v/apimail": "^0.1.2",
+        "@8v/lark": "^0.1.5",
+        "@8v/wxpush": "^0.1.3",
+      },
+    },
+  },
+  "packages": {
+    "@8v/apimail": ["@8v/apimail@0.1.2", "", { "dependencies": { "@8v/curl": "^0.1.6" } }, "sha512-Q+m+TKmzLGQj/RvGgPNPw0LXHLp+ss/bQEMNituRKjNi59K2kSc7ZtU+SaOJYrJ4LJ6/vC/X9YRSKHimSD7HqQ=="],
+
+    "@8v/curl": ["@8v/curl@0.1.6", "", {}, "sha512-6QGUJGHhh27wXssfBZEvCoX8YUVZOh155NEY282tJ9MGHOEBSppdbpMOGWaVYi1q+Gsi2IolBER6QvBBC21MaQ=="],
+
+    "@8v/lark": ["@8v/lark@0.1.5", "", { "dependencies": { "@8v/curl": "^0.1.6" } }, "sha512-BP9ONQPKK1L+Y01bIPwgo/sq3avkz2M9kq9NSyDrQ6npZDVxM5uWEts4Bt3I65+0IMnVrQE4bYYx9hnTlJw3wA=="],
+
+    "@8v/wxpush": ["@8v/wxpush@0.1.3", "", { "dependencies": { "@8v/curl": "^0.1.6" } }, "sha512-574gm9rhEgUYE0GbI3AeRyUAryv+dv5pU9sNm0hlIoZvjlb7F1ap3Bow0294ZNtetqNuhS2N+oLdXa162EpktA=="],
+  }
+}
