@@ -4,6 +4,7 @@
     "jsr:@8v/apimail@~0.1.3": "0.1.3",
     "jsr:@8v/curl@~0.1.6": "0.1.6",
     "jsr:@8v/hsec@~0.1.2": "0.1.2",
+    "jsr:@8v/kind-name@~0.1.2": "0.1.2",
     "jsr:@8v/lark@~0.1.6": "0.1.6",
     "jsr:@8v/pg@~0.1.3": "0.1.3",
     "jsr:@8v/send@~0.1.12": "0.1.12",
@@ -26,6 +27,9 @@
     },
     "@8v/hsec@0.1.2": {
       "integrity": "29649526b7f22d1cfedb3f3ebd23653ebb0695299296b0681b61792028ae27ee"
+    },
+    "@8v/kind-name@0.1.2": {
+      "integrity": "d84d4e2123bb02c5d4e3892d323b561b33765ba5804683a5a4c32fd1ec7374a1"
     },
     "@8v/lark@0.1.6": {
       "integrity": "156a1b0b31f09225b898986c087fd8b8843eacf05bad54ed6b94b83963b11485",
@@ -116,6 +120,7 @@
   "workspace": {
     "dependencies": [
       "jsr:@8v/hsec@~0.1.2",
+      "jsr:@8v/kind-name@~0.1.2",
       "jsr:@8v/pg@~0.1.3",
       "jsr:@8v/send@~0.1.12"
     ],
