@@ -1,14 +1,8 @@
 import send from "@8v/send";
 import hsec from "@8v/hsec";
+import kindName from "@8v/kind-name";
 
 const toString = (s) => (s ? s.toString() : null);
-
-const kindName = (kind, name) => {
-  if (name) {
-    kind += " " + name;
-  }
-  return kind;
-};
 
 export default async (pg, duration, kind, name, func, args) => {
   const one = async (...args) => (await pg(...args).values())[0][0];
