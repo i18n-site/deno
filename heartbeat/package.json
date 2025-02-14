@@ -1,6 +1,6 @@
 {
   "name": "@8v/heartbeat",
-  "version": "0.1.29",
+  "version": "0.1.30",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18n-site/deno.git"

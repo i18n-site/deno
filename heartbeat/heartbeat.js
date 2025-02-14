@@ -3,6 +3,13 @@ import hsec from "@8v/hsec";
 
 const toString = (s) => (s ? s.toString() : null);
 
+const kindName = (kind, name) => {
+  if (name) {
+    kind += " " + name;
+  }
+  return kind;
+};
+
 export default async (pg, duration, kind, name, func, args) => {
   const one = async (...args) => (await pg(...args).values())[0][0];
 
@@ -21,7 +28,7 @@ export default async (pg, duration, kind, name, func, args) => {
 
     if (recover_cost > 0) {
       await send(
-        "✅ " + kind + " " + name,
+        kindName(kind, name) + " 恢复 ✅",
         "故障恢复, 耗时" + hsec(recover_cost),
       );
     }
@@ -31,7 +38,7 @@ export default async (pg, duration, kind, name, func, args) => {
     if (
       await one`SELECT fn.heartbeatErr(${kind},${name},${duration},${e})`
     ) {
-      await send("❌ " + kind + " " + name, e);
+      await send(kindName(kind, name) + "故障 ❌", e);
     }
   }
 };
