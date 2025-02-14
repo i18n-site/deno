@@ -32,7 +32,7 @@ export default async (pg, duration, kind, name, func, args) => {
     if (
       await one`SELECT fn.heartbeatErr(${kind},${name},${duration},${e})`
     ) {
-      await send(kindName(kind, name) + "故障 ❌", e);
+      await send(kindName(kind, name) + " 故障 ❌", e);
     }
   }
 };
