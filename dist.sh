@@ -19,10 +19,6 @@ deno lint
 deno fmt
 bun x mdt .
 
-if [ -f "mod.coffee" ]; then
-  bun x cep -c .
-fi
-
 git add .
 
 if [ -f "package.json" ]; then
@@ -40,17 +36,20 @@ dist=/tmp/dist/$PROJECT
 rm -rf $dist
 mkdir -p $dist
 
-cd $dist
-
 sync() {
   rsync \
-    --exclude "*.coffee" \
     --exclude "*.mdt" \
     --exclude "*.lock" \
     --exclude ".*" \
     --exclude 'node_modules' \
     --exclude='*_test.js' \
     -av $DIR/$PROJECT/ $dist
+
+  cd $dist
+  if [ -f "mod.coffee" ]; then
+    bun x cep -c .
+  fi
+  rm -rf *.coffee
 }
 
 sync
@@ -71,7 +70,7 @@ if [ -f "package.json" ]; then
   bun publish --access public
 fi
 
-rm -rf $dist
+# rm -rf $dist
 
 cd $DIR
 ./upgrade.sh

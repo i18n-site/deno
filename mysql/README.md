@@ -13,34 +13,7 @@
 [`mod.js`](./mod.js)
 
 ```js
-  //!/usr/bin/env coffee
-import {
-  createConnection
-} from 'mysql2/promise';
-
-export default async(option) => {
-  var conn, q, q1;
-  conn = (await createConnection(Object.assign({
-    // connectTimeout: The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10000)
-    // connectTimeout: 10000
-    rowsAsArray: true,
-    typeCast: (field, next) => {
-      var type;
-      ({type} = field);
-      if ((![32, 512].includes(field.length) && type === 'VAR_STRING') || type.endsWith('BLOB')) {
-        return field.buffer().toString('utf8');
-      }
-      return next();
-    }
-  }, option)));
-  q = async(sql, ...arg) => {
-    return ((await conn.query(sql, arg)))[0];
-  };
-  q1 = async(sql, ...arg) => {
-    return ((await q(sql, arg)))[0];
-  };
-  return {conn, q, q1};
-};
+./mod.js
 ```
 
 ## About

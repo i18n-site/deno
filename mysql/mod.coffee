@@ -34,14 +34,20 @@ export default (option)=>
       )
     )[0]
 
-  q1 = (
+  q0 = (
     sql
     arg...
   ) =>
-    (await q(sql, arg))[0]
+    (await q(sql, ...arg))[0]
+
+  q00 = (
+    sql
+    arg...
+  ) =>
+    (await q0(sql, ...arg))?[0]
 
   {
     conn
     q
-    q1
+    q0
   }
