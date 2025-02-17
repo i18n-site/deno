@@ -7,7 +7,7 @@ export default (func, times = 3) => async (...args) => {
       if (times == n++) {
         throw e;
       }
-      console.error(e);
+      console.error(e, args);
     }
   }
 };
