@@ -5,7 +5,19 @@
 ```js
 #!/usr/bin/env bun
 
-// import retry from "./mod.js";
+import retry from "./mod.js";
+
+let retryed = 0;
+
+const test = retry(
+  () => {
+    if (++retryed < 3) {
+      throw new Error("test");
+    }
+  },
+);
+
+await test();
 ```
 
 ## Code
@@ -13,6 +25,8 @@
 [`mod.js`](./mod.js)
 
 ```js
+import sleep from "@3-/sleep";
+
 export default (func, times = 3) => async (...args) => {
   let n = 0;
   while (1) {
@@ -23,6 +37,7 @@ export default (func, times = 3) => async (...args) => {
         throw e;
       }
       console.error(e, args);
+      await sleep(1e3);
     }
   }
 };

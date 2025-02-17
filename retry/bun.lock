@@ -1,0 +1,14 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@8v/retry",
+      "dependencies": {
+        "@3-/sleep": "^0.0.4",
+      },
+    },
+  },
+  "packages": {
+    "@3-/sleep": ["@3-/sleep@0.0.4", "", {}, "sha512-hxWtyS7EX7efFJyJeMfEZ/csPIklA4EtYFSRKOy29E7RyPOHxRhopYlgmiPs8K4X7XrODj2P3NTJsuhGKlDYPQ=="],
+  }
+}

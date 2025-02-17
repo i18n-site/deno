@@ -11,5 +11,8 @@
         "no-ex-assign"
       ]
     }
+  },
+  "imports": {
+    "@3-/sleep": "npm:@3-/sleep@^0.0.4"
   }
 }
