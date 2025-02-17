@@ -8,10 +8,10 @@
 
 ## Code
 
-[`mod.js`](./mod.js)
+[`mod.coffee`](./mod.coffee)
 
 ```js
-<+ ./mod.js >
+<+ ./mod.coffee >
 ```
 
 ## About
