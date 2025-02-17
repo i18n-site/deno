@@ -6,7 +6,7 @@ export default (func, times = 3) => async (...args) => {
     try {
       return await func(...args);
     } catch (e) {
-      if (times == n++) {
+      if (times < ++n) {
         throw e;
       }
       console.error(e, args);
