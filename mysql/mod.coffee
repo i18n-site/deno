@@ -44,9 +44,9 @@ export default (option)=>
     sql
     arg...
   ) =>
-    r = (await q0(sql, ...arg))
+    r = await q0(sql, ...arg)
     if r
-      rturn r[0]
+      return r[0]
     return
 
   {
