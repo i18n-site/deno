@@ -47,7 +47,7 @@ sync() {
 
   cd $dist
   if [ -f "mod.coffee" ]; then
-    bun x cep -c .
+    $DIR/node_modules/@3-/coffee_plus/cep.js -c .
   fi
   rm -rf *.coffee
 }
