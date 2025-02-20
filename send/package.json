@@ -1,0 +1,24 @@
+{
+  "name": "@8v/send",
+  "version": "0.1.15",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/send",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js",
+    "./*": "./*"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "@8v/lark": "^0.1.5",
+    "@8v/wxpush": "^0.1.3"
+  }
+}

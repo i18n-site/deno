@@ -1,0 +1,19 @@
+{
+  "name": "@8v/send",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "license": "MulanPSL-2.0",
+  "imports": {
+    "@8v/lark": "jsr:@8v/lark@^0.1.6",
+    "@8v/wxpush": "jsr:@8v/wxpush@^0.1.3"
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  }
+}

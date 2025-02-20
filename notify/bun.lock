@@ -1,0 +1,14 @@
+{
+  "lockfileVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@8v/notify",
+      "dependencies": {
+        "@8v/curl": "^0.1.6",
+      },
+    },
+  },
+  "packages": {
+    "@8v/curl": ["@8v/curl@0.1.6", "", {}, "sha512-6QGUJGHhh27wXssfBZEvCoX8YUVZOh155NEY282tJ9MGHOEBSppdbpMOGWaVYi1q+Gsi2IolBER6QvBBC21MaQ=="],
+  }
+}

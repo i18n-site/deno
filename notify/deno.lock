@@ -1,0 +1,27 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@8v/curl@~0.1.6": "0.1.6",
+    "npm:@8v/curl@~0.1.6": "0.1.6"
+  },
+  "jsr": {
+    "@8v/curl@0.1.6": {
+      "integrity": "3a468cbdfb4b0898506012e90ebce7e1c0e7fd39eb09b07ee886dfa2a2f884a5"
+    }
+  },
+  "npm": {
+    "@8v/curl@0.1.6": {
+      "integrity": "sha512-6QGUJGHhh27wXssfBZEvCoX8YUVZOh155NEY282tJ9MGHOEBSppdbpMOGWaVYi1q+Gsi2IolBER6QvBBC21MaQ=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@8v/curl@~0.1.6"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@8v/curl@~0.1.6"
+      ]
+    }
+  }
+}
