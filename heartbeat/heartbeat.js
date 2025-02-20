@@ -29,10 +29,15 @@ export default async (pg, duration, kind, name, func, args) => {
   } catch (e) {
     console.error(e);
     e = toString(e?.message || e);
-    if (
-      await one`SELECT fn.heartbeatErr(${kind},${name},${duration},${e})`
-    ) {
-      await notify(kindName(kind, name) + " 故障 ❌", e);
+    try {
+      if (
+        !await one`SELECT fn.heartbeatErr(${kind},${name},${duration},${e})`
+      ) {
+        return;
+      }
+    } catch (err) {
+      console.error(err);
     }
+    await notify(kindName(kind, name) + " 故障 ❌", e);
   }
 };
