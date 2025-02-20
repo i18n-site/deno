@@ -4,12 +4,12 @@
     "jsr:@8v/curl@~0.1.6": "0.1.6",
     "jsr:@8v/hsec@~0.1.2": "0.1.2",
     "jsr:@8v/kind-name@~0.1.2": "0.1.2",
-    "jsr:@8v/notify@~0.1.2": "0.1.2",
+    "jsr:@8v/notify@~0.1.3": "0.1.3",
     "jsr:@8v/pg@~0.1.3": "0.1.3",
     "jsr:@y0/postgres@^3.4.5": "3.4.5",
     "npm:@8v/hsec@~0.1.2": "0.1.2",
     "npm:@8v/kind-name@~0.1.2": "0.1.2",
-    "npm:@8v/notify@~0.1.2": "0.1.2",
+    "npm:@8v/notify@~0.1.3": "0.1.3",
     "npm:@8v/pg@~0.1.3": "0.1.3_@3-+write@0.0.1_postgres@3.4.5",
     "npm:ansis@^3.12.0": "3.15.0"
   },
@@ -23,8 +23,8 @@
     "@8v/kind-name@0.1.2": {
       "integrity": "d84d4e2123bb02c5d4e3892d323b561b33765ba5804683a5a4c32fd1ec7374a1"
     },
-    "@8v/notify@0.1.2": {
-      "integrity": "b4e769095a315500e65969d30364cd0f34a2c6bfe01e7be840809ea94f762aa4",
+    "@8v/notify@0.1.3": {
+      "integrity": "8095f470e4bddacd1b142043ef09465f0298b42925775be29fb0797eface3ec7",
       "dependencies": [
         "jsr:@8v/curl"
       ]
@@ -53,8 +53,8 @@
     "@8v/kind-name@0.1.2": {
       "integrity": "sha512-Bd7Rg9xVB7FVR+TfLoo2z8Moc/imuXpEr62sLKv1jfZyE/AjYPvsMgoTv80wcNfVBz2TJwqqWdEclJ89vycDiw=="
     },
-    "@8v/notify@0.1.2": {
-      "integrity": "sha512-QFDuYaQLRMjySW41B1WAhw/9P5YgRziCRDWqKH5V2vej5vrchxYpibo4/7wgIRMtfc0M3uvcOTr0lR39MBrTLw==",
+    "@8v/notify@0.1.3": {
+      "integrity": "sha512-UadCzZbpN969tiZJClLyaxX7tAFoRO4U+bf37dAELfhrP+o/8Cvtmq93XutODdRnP9WitSkWVJvV8/P2YQgE/w==",
       "dependencies": [
         "@8v/curl"
       ]
@@ -82,14 +82,14 @@
     "dependencies": [
       "jsr:@8v/hsec@~0.1.2",
       "jsr:@8v/kind-name@~0.1.2",
-      "jsr:@8v/notify@~0.1.2",
+      "jsr:@8v/notify@~0.1.3",
       "jsr:@8v/pg@~0.1.3"
     ],
     "packageJson": {
       "dependencies": [
         "npm:@8v/hsec@~0.1.2",
         "npm:@8v/kind-name@~0.1.2",
-        "npm:@8v/notify@~0.1.2",
+        "npm:@8v/notify@~0.1.3",
         "npm:@8v/pg@~0.1.3"
       ]
     }
