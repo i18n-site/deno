@@ -48,7 +48,7 @@ export default async (title, txt, url) => {
           body,
         },
       );
-      if (r.status === 200) {
+      if ([200, 204].includes(r.status)) {
         return r;
       }
     } catch (err) {
