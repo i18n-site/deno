@@ -15,7 +15,7 @@
 ```js
 #!/usr/bin/env bun
 
-import { argv, exit } from "node:process";
+import { exit } from "node:process";
 
 let RUNNING = 0;
 
@@ -37,9 +37,11 @@ Deno.cron = async (kind, cron, func) => {
   return;
 };
 
-await import(argv[2]);
-await promise;
-exit();
+export default async (import_mod) => {
+  await import_mod;
+  await promise;
+  exit();
+};
 ```
 
 ## About
