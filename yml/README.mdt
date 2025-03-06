@@ -1,0 +1,9 @@
+[Github Repo](https://github.com/i18n-site/deno/tree/dev/yml)
+
+[mod.js](./mod.js)
+
+```coffee
+<+ ./mod.js >
+```
+
+<+ ../about.md >

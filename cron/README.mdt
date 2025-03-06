@@ -1,0 +1,21 @@
+[Github Repo](https://github.com/i18n-site/deno/tree/dev/cron)
+
+deno deploy 的 cron 的时间不能调用函数生成，必须是写死的字符串
+
+## Usage
+
+```js
+<+ ./mod_test.js >
+```
+
+## Code
+
+[`mod.js`](./mod.js)
+
+```js
+<+ ./mod.js >
+```
+
+## About
+
+<+ ../about.md >

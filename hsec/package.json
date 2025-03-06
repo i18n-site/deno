@@ -1,0 +1,20 @@
+{
+  "name": "@8v/hsec",
+  "version": "0.1.2",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/hsec",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js",
+    "./*": "./*"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module"
+}

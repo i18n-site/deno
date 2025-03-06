@@ -1,0 +1,27 @@
+{
+  "languageserver": {
+    "deno": {
+      "command": "deno",
+      "args": [
+        "lsp"
+      ],
+      "filetypes": [
+        "typescript",
+        "javascript"
+      ],
+      "initializationOptions": {
+        "enable": true,
+        "lint": true,
+        "unstable": true,
+        "suggest": {
+          "imports": {
+            "hosts": {
+              "https://deno.land": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "coc.preferences.formatOnSave": true
+}

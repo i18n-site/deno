@@ -1,0 +1,25 @@
+{
+  "name": "@8v/bantld",
+  "version": "0.1.6",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "license": "MulanPSL-2.0",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-var",
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  },
+  "imports": {
+    "@8v/cron": "jsr:@8v/cron@^0.1.7",
+    "@8v/curl": "jsr:@8v/curl@^0.1.7",
+    "@8v/heartbeat": "jsr:@8v/heartbeat@^0.1.35",
+    "@8v/redis": "jsr:@8v/redis@^0.1.14",
+    "@8v/tld": "jsr:@8v/tld@^0.1.2",
+    "punycode": "npm:punycode@^2.3.1"
+  }
+}

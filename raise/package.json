@@ -1,0 +1,23 @@
+{
+  "name": "@8v/raise",
+  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/raise",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js",
+    "./*": "./*"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "@8v/yml": "^0.1.3"
+  }
+}

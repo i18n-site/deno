@@ -1,0 +1,15 @@
+{
+  "name": "@8v/_tmpl",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "license": "MulanPSL-2.0",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  }
+}

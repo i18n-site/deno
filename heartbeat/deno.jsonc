@@ -1,0 +1,23 @@
+{
+  "name": "@8v/heartbeat",
+  "exports": {
+    ".": "./mod.js",
+    "./kind.js": "./kind.js",
+    "./heartbeat.js": "./heartbeat.js"
+  },
+  "license": "MulanPSL-2.0",
+  "imports": {
+    "@8v/hsec": "jsr:@8v/hsec@^0.1.2",
+    "@8v/kind-name": "jsr:@8v/kind-name@^0.1.2",
+    "@8v/notify": "jsr:@8v/notify@^0.1.3",
+    "@8v/pg": "jsr:@8v/pg@^0.1.3"
+  },
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  }
+}

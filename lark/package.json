@@ -1,0 +1,23 @@
+{
+  "name": "@8v/lark",
+  "version": "0.1.6",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/lark",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js",
+    "./*": "./*"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "@8v/curl": "^0.1.7"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@8v/mysql",
+  "version": "0.1.11",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/mysql",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "mysql2": "^3.13.0"
+  }
+}

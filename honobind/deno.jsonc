@@ -1,0 +1,16 @@
+{
+  "name": "@8v/honobind",
+  "exports": "./mod.js",
+  "license": "MulanPSL-2.0",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  },
+  "imports": {
+    "@8v/honofn": "jsr:@8v/honofn@^0.1.4"
+  }
+}

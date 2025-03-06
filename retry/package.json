@@ -1,0 +1,22 @@
+{
+  "name": "@8v/retry",
+  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/retry",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module",
+  "dependencies": {
+    "@3-/sleep": "^0.0.4"
+  }
+}

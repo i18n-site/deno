@@ -1,0 +1,28 @@
+{
+  "version": "4",
+  "specifiers": {
+    "npm:tldts@6.1.83": "6.1.83",
+    "npm:tldts@^6.1.83": "6.1.83"
+  },
+  "npm": {
+    "tldts-core@6.1.83": {
+      "integrity": "sha512-I2wb9OJc6rXyh9d4aInhSNWChNI+ra6qDnFEGEwe9OoA68lE4Temw29bOkf1Uvwt8VZS079t1BFZdXVBmmB4dw=="
+    },
+    "tldts@6.1.83": {
+      "integrity": "sha512-FHxxNJJ0WNsEBPHyC1oesQb3rRoxpuho/z2g3zIIAhw1WHJeQsUzK1jYK8TI1/iClaa4fS3Z2TCA9mtxXsENSg==",
+      "dependencies": [
+        "tldts-core"
+      ]
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "npm:tldts@^6.1.83"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:tldts@6.1.83"
+      ]
+    }
+  }
+}

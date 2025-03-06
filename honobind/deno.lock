@@ -1,0 +1,27 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@8v/honofn@~0.1.4": "0.1.4",
+    "npm:@8v/honofn@~0.1.4": "0.1.4"
+  },
+  "jsr": {
+    "@8v/honofn@0.1.4": {
+      "integrity": "d55131cc63dc9d76d068ee8a0d784da1b78d35e3ebd3b53d6d3552f429f87e83"
+    }
+  },
+  "npm": {
+    "@8v/honofn@0.1.4": {
+      "integrity": "sha512-w2v5/AY6t1ieXlCffOanvZz+bRILhG6WkxzX7mrY9wr8YQnj9X200HlcTjEFWiEOZ78W3KgT+3IDoUjZ/IM8bA=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@8v/honofn@~0.1.4"
+    ],
+    "packageJson": {
+      "dependencies": [
+        "npm:@8v/honofn@~0.1.4"
+      ]
+    }
+  }
+}

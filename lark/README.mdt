@@ -1,0 +1,15 @@
+[Github Repo](https://github.com/i18n-site/deno/tree/dev/lark)
+
+`mod_test.js`
+
+```js
+<+ ./mod_test.js >
+```
+
+[`mod.js`](./mod.js)
+
+```js
+<+ ./mod.js >
+```
+
+<+ ../about.md >

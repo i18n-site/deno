@@ -1,0 +1,18 @@
+{
+  "name": "@8v/retry",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "license": "MulanPSL-2.0",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  },
+  "imports": {
+    "@3-/sleep": "npm:@3-/sleep@^0.0.4"
+  }
+}

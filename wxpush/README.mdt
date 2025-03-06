@@ -1,0 +1,19 @@
+[Github Repo](https://github.com/i18n-site/deno/tree/dev/wxpush)
+
+## Usage
+
+```js
+<+ ./mod_test.js >
+```
+
+## Code
+
+[`mod.js`](./mod.js)
+
+```js
+<+ ./mod.js >
+```
+
+## About
+
+<+ ../about.md >

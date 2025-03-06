@@ -1,0 +1,19 @@
+{
+  "name": "@8v/honofn",
+  "version": "0.1.4",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/i18n-site/deno.git"
+  },
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/honofn",
+  "author": "i18n.site@gmail.com",
+  "license": "MulanPSL-2.0",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "files": [
+    "*"
+  ],
+  "scripts": {},
+  "type": "module"
+}
