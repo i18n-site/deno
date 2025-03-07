@@ -1,7 +1,9 @@
 {
   "name": "@8v/send",
   "exports": {
-    ".": "./mod.js"
+    ".": "./mod.js",
+    "./Send.js": "./Send.js",
+    "./fromEnv.js": "./fromEnv.js"
   },
   "license": "MulanPSL-2.0",
   "imports": {
