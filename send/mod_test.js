@@ -1,5 +1,5 @@
 import { env, exit } from "node:process";
-import { default as Send, fromEnv } from "./mod.js";
+import send from "./mod.js";
 
 const { Lark } = env;
 
@@ -7,8 +7,6 @@ if (!Lark) {
   console.error("Lark is not set");
   exit(1);
 }
-
-const send = Send(fromEnv(env));
 
 await send(
   "test title",
