@@ -2,6 +2,7 @@
 
 import { parseEnv } from "node:util";
 import read from "@3-/read";
+import bool from "@8v/bool";
 
 export default (env_path) => {
   console.log(parseEnv(read(env_path)));
@@ -11,9 +12,7 @@ export default (env_path) => {
 
       switch (key) {
         case "compress":
-          if (val && !["false", "0"].includes(val)) {
-            val = true;
-          }
+          val = bool(val);
           break;
         case "pwd":
           key = "password";
