@@ -15,10 +15,10 @@
 ```js
 #!/usr/bin/env coffee
 
-> mysql2/promise > createConnection
+> mysql2/promise > createPool
 
 export default (option)=>
-  conn = await createConnection(
+  pool = await createPool(
     Object.assign(
       {
         # connectTimeout: The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10000)
@@ -43,7 +43,7 @@ export default (option)=>
     arg...
   ) =>
     (
-      await conn.query(
+      await pool.query(
         sql
         arg
       )
@@ -65,7 +65,7 @@ export default (option)=>
     return
 
   {
-    conn
+    pool
     q
     q0
     q00
