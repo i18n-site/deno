@@ -1,7 +1,8 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:mysql2@^3.15.3": "3.15.3"
+    "npm:mysql2@^3.15.3": "3.15.3",
+    "npm:parse-dotenv@^2.1.0": "2.1.0"
   },
   "npm": {
     "aws-ssl-profiles@1.1.2": {
@@ -54,6 +55,9 @@
         "lru-cache"
       ]
     },
+    "parse-dotenv@2.1.0": {
+      "integrity": "sha512-pu5Js0TLM64TR51FmpNGwD0v2Uxqa6c+96qF6/mKv0vM0SND7Z0uU5jbbWWKCb0/QxhjX7/neAK+2A9opg0K8g=="
+    },
     "safer-buffer@2.1.2": {
       "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg=="
     },
@@ -70,7 +74,8 @@
     ],
     "packageJson": {
       "dependencies": [
-        "npm:mysql2@^3.15.3"
+        "npm:mysql2@^3.15.3",
+        "npm:parse-dotenv@^2.1.0"
       ]
     }
   }
