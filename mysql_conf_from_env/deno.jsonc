@@ -1,0 +1,15 @@
+{
+  "name": "@8v/mysql_conf_from_env",
+  "exports": {
+    ".": "./mod.js"
+  },
+  "license": "MulanPSL-2.0",
+  "lint": {
+    "rules": {
+      "exclude": [
+        "no-slow-types",
+        "no-ex-assign"
+      ]
+    }
+  }
+}

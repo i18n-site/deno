@@ -1,6 +1,6 @@
 {
   "name": "@8v/mysql_conf_from_env",
-  "version": "0.1.6",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18n-site/deno.git"
@@ -16,9 +16,5 @@
     "*"
   ],
   "scripts": {},
-  "type": "module",
-  "dependencies": {
-    "@3-/read": "^0.1.4",
-    "@8v/bool": "^0.1.1"
-  }
+  "type": "module"
 }
