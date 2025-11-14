@@ -3,6 +3,6 @@
   "exports": "./mod.js",
   "license": "MulanPSL-2.0",
   "imports": {
-    "@std/yaml": "jsr:@std/yaml@^1.0.5"
+    "@std/yaml": "jsr:@std/yaml@^1.0.10"
   }
 }

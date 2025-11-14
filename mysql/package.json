@@ -17,6 +17,6 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "mysql2": "^3.13.0"
+    "mysql2": "^3.15.3"
   }
 }

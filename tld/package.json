@@ -17,6 +17,6 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "tldts": "npm:tldts@6.1.83"
+    "tldts": "npm:tldts@7.0.17"
   }
 }

@@ -1,27 +1,28 @@
 {
-  "version": "4",
+  "version": "5",
   "specifiers": {
-    "npm:tldts@6.1.83": "6.1.83",
-    "npm:tldts@^6.1.83": "6.1.83"
+    "npm:tldts@7.0.17": "7.0.17",
+    "npm:tldts@^7.0.17": "7.0.17"
   },
   "npm": {
-    "tldts-core@6.1.83": {
-      "integrity": "sha512-I2wb9OJc6rXyh9d4aInhSNWChNI+ra6qDnFEGEwe9OoA68lE4Temw29bOkf1Uvwt8VZS079t1BFZdXVBmmB4dw=="
+    "tldts-core@7.0.17": {
+      "integrity": "sha512-DieYoGrP78PWKsrXr8MZwtQ7GLCUeLxihtjC1jZsW1DnvSMdKPitJSe8OSYDM2u5H6g3kWJZpePqkp43TfLh0g=="
     },
-    "tldts@6.1.83": {
-      "integrity": "sha512-FHxxNJJ0WNsEBPHyC1oesQb3rRoxpuho/z2g3zIIAhw1WHJeQsUzK1jYK8TI1/iClaa4fS3Z2TCA9mtxXsENSg==",
+    "tldts@7.0.17": {
+      "integrity": "sha512-Y1KQBgDd/NUc+LfOtKS6mNsC9CCaH+m2P1RoIZy7RAPo3C3/t8X45+zgut31cRZtZ3xKPjfn3TkGTrctC2TQIQ==",
       "dependencies": [
         "tldts-core"
-      ]
+      ],
+      "bin": true
     }
   },
   "workspace": {
     "dependencies": [
-      "npm:tldts@^6.1.83"
+      "npm:tldts@^7.0.17"
     ],
     "packageJson": {
       "dependencies": [
-        "npm:tldts@6.1.83"
+        "npm:tldts@7.0.17"
       ]
     }
   }

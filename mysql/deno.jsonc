@@ -13,6 +13,6 @@
     }
   },
   "imports": {
-    "mysql2": "npm:mysql2@^3.13.0"
+    "mysql2": "npm:mysql2@^3.15.3"
   }
 }
