@@ -11,5 +11,9 @@
         "no-ex-assign"
       ]
     }
+  },
+  "imports": {
+    "@3-/read": "npm:@3-/read@^0.1.4",
+    "@8v/bool": "npm:@8v/bool@^0.1.1"
   }
 }
