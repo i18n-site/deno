@@ -1,5 +1,5 @@
 {
-  "name": "@8v/mysql_conf_from_env",
+  "name": "@8v/mysql-conf-from-env",
   "exports": {
     ".": "./mod.js"
   },

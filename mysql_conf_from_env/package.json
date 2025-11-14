@@ -1,11 +1,11 @@
 {
-  "name": "@8v/mysql_conf_from_env",
-  "version": "0.1.3",
+  "name": "@8v/mysql-conf-from-env",
+  "version": "0.1.4",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18n-site/deno.git"
   },
-  "homepage": "https://github.com/i18n-site/deno/tree/dev/mysql_conf_from_env",
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/mysql-conf-from-env",
   "author": "i18n.site@gmail.com",
   "license": "MulanPSL-2.0",
   "exports": {

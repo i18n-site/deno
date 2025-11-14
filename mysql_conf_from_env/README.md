@@ -1,11 +1,11 @@
-[Github Repo](https://github.com/i18n-site/deno/tree/dev/mysql_conf_from_env)
+[Github Repo](https://github.com/i18n-site/deno/tree/dev/mysql-conf-from-env)
 
 ## Usage
 
 ```js
 #!/usr/bin/env bun
 
-// import mysql_conf_from_env from "./mod.js";
+// import mysql-conf-from-env from "./mod.js";
 ```
 
 ## Code
