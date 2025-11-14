@@ -5,7 +5,6 @@ import read from "@3-/read";
 import bool from "@8v/bool";
 
 export default (env_path) => {
-  console.log(parseEnv(read(env_path)));
   return Object.fromEntries(
     Object.entries(parseEnv(read(env_path))).map(([key, val]) => {
       key = key.slice(6).toLocaleLowerCase();
