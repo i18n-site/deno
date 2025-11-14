@@ -67,7 +67,7 @@ if [ -f "package.json" ]; then
   if [ -f "mod.node.js" ]; then
     mv mod.node.js mod.js
   fi
-  npm publish --access public
+  bun publish --access public --registry=https://registry.npmjs.org/
 fi
 
 # rm -rf $dist
