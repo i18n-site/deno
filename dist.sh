@@ -55,7 +55,7 @@ sync() {
 sync
 
 if [ -f "deno.jsonc" ]; then
-  sed -i "2s/^/  \"version\": \"$ver\",\n/" deno.jsonc
+  sd -s '{' "{\n  \"version\": \"$ver\"," deno.jsonc
   rm -rf package.json *.node.js
   deno publish --token $(cat ~/.config/deno/publish.token)
 fi
