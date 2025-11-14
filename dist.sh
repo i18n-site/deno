@@ -67,7 +67,7 @@ if [ -f "package.json" ]; then
   if [ -f "mod.node.js" ]; then
     mv mod.node.js mod.js
   fi
-  bun publish --access public
+  npm publish --access public
 fi
 
 # rm -rf $dist
