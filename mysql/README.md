@@ -5,7 +5,13 @@
 ```js
 #!/usr/bin/env bun
 
+// import TIDB from "./conf/TIDB.js";
 // import mysql from "./mod.js";
+
+// const DB = mysql(TIDB);
+// const hash = await DB.q00("SELECT ip FROM vps LIMIT 1");
+// console.log(hash, typeof hash, hash instanceof Buffer);
+// process.exit(0);
 ```
 
 ## Code
@@ -18,21 +24,21 @@
 > mysql2/promise > createPool
 
 export default (option)=>
-  pool = await createPool(
+  pool = createPool(
     Object.assign(
       {
         # connectTimeout: The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10000)
         # connectTimeout: 10000
         rowsAsArray: true
-        typeCast: (field, next)=>
-          {type} = field
-          if (
-            not [16,32,512].includes(
-              field.length
-            ) and type == 'VAR_STRING'
-          ) or type.endsWith('BLOB')
-            return field.buffer().toString('utf8')
-          return next()
+        # typeCast: (field, next)=>
+        #   {type} = field
+        #   if (
+        #     not [16,32,512].includes(
+        #       field.length
+        #     ) and type == 'VAR_STRING'
+        #   ) or type.endsWith('BLOB')
+        #     return field.buffer().toString('utf8')
+        #   return next()
       },
       option
     )
