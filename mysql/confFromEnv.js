@@ -10,6 +10,11 @@ export default (env_path) => {
       key = key.slice(6).toLocaleLowerCase();
 
       switch (key) {
+        case "compress":
+          if (val && !["false", "0"].includes(val)) {
+            val = true;
+          }
+          break;
         case "pwd":
           key = "password";
           break;
