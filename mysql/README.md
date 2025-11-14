@@ -27,7 +27,7 @@ export default (option)=>
         typeCast: (field, next)=>
           {type} = field
           if (
-            not [32,512].includes(
+            not [16,32,512].includes(
               field.length
             ) and type == 'VAR_STRING'
           ) or type.endsWith('BLOB')
