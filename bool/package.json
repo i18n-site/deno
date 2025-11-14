@@ -1,11 +1,11 @@
 {
-  "name": "@8v/is_false",
+  "name": "@8v/bool",
   "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18n-site/deno.git"
   },
-  "homepage": "https://github.com/i18n-site/deno/tree/dev/is_false",
+  "homepage": "https://github.com/i18n-site/deno/tree/dev/bool",
   "author": "i18n.site@gmail.com",
   "license": "MulanPSL-2.0",
   "exports": {
