@@ -1,6 +1,6 @@
 {
   "name": "@8v/mysql",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/i18n-site/deno.git"
@@ -18,8 +18,6 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "@3-/read": "^0.1.4",
-    "@8v/bool": "^0.1.1",
     "mysql2": "^3.15.3"
   }
 }
