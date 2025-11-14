@@ -3,21 +3,21 @@
 > mysql2/promise > createPool
 
 export default (option)=>
-  pool = await createPool(
+  pool = createPool(
     Object.assign(
       {
         # connectTimeout: The milliseconds before a timeout occurs during the initial connection to the MySQL server. (Default: 10000)
         # connectTimeout: 10000
         rowsAsArray: true
-        typeCast: (field, next)=>
-          {type} = field
-          if (
-            not [16,32,512].includes(
-              field.length
-            ) and type == 'VAR_STRING'
-          ) or type.endsWith('BLOB')
-            return field.buffer().toString('utf8')
-          return next()
+        # typeCast: (field, next)=>
+        #   {type} = field
+        #   if (
+        #     not [16,32,512].includes(
+        #       field.length
+        #     ) and type == 'VAR_STRING'
+        #   ) or type.endsWith('BLOB')
+        #     return field.buffer().toString('utf8')
+        #   return next()
       },
       option
     )
