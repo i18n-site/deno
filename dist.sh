@@ -55,7 +55,7 @@ sync() {
 sync
 
 if [ -f "deno.jsonc" ]; then
-  sd -s '{' "{\n  \"version\": \"$ver\"," deno.jsonc
+  jq --arg ver "$ver" '.version = $ver' deno.jsonc > deno.jsonc.tmp && mv deno.jsonc.tmp deno.jsonc
   rm -rf package.json *.node.js
   deno publish --token $(cat ~/.config/deno/publish.token)
 fi
