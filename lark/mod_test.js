@@ -12,8 +12,5 @@ if (!LARK) {
 
 const send = Lark(LARK);
 
-await send(
-  "test title",
-  "this is a test message",
-  "https://open.larksuite.com/document/client-docs/bot-v3/add-custom-bot",
-);
+await send("test title", "this is a test message", "https://baidu.com");
+await send("test title", "this is a test message");
