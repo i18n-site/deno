@@ -1,0 +1,15 @@
+{
+  "lockfileVersion": 1,
+  "configVersion": 1,
+  "workspaces": {
+    "": {
+      "name": "@8v/lark",
+      "dependencies": {
+        "@8v/curl": "^0.1.7",
+      },
+    },
+  },
+  "packages": {
+    "@8v/curl": ["@8v/curl@0.1.7", "http://mirrors.cloud.tencent.com/npm/@8v/curl/-/curl-0.1.7.tgz", {}, "sha512-JmS4lp5BqHFQe23zWG+NP72gQClmFaBj8mnjoheAU60hK9AIRdtD6B19wX78vhHgaBPySt6FO5wc/84/WGY9Bg=="],
+  }
+}
