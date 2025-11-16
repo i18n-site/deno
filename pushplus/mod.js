@@ -1,4 +1,4 @@
-import curl from "@8v/curl/cJson";
+import curl from "@8v/curl/cJson.js";
 
 /*
 token 是 body 无 用户令牌或消息令牌
