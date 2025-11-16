@@ -28,6 +28,7 @@ export default (token, topic) => {
           body: JSON.stringify({
             topic,
             content,
+            ...conf,
           }),
         });
       }),
