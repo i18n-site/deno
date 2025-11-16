@@ -1,7 +1,9 @@
 #!/usr/bin/env bun
 
-import pushplus from "./mod.js";
-import { PUSHPLUS, PUSHPLUS_TOPIC } from "../../../js0/conf/status/NOTIFY.js";
+import * as CONF from "../../../js0/conf/status/NOTIFY.js";
 
-const send = pushplus(PUSHPLUS, PUSHPLUS_TOPIC);
-await send("测试", "正文");
+console.log(CONF);
+
+// import pushplus from "./mod.js";
+// const send = pushplus(PUSHPLUS, PUSHPLUS_TOPIC);
+// await send("测试", "正文");
