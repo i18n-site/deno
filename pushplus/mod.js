@@ -18,7 +18,7 @@ export default (token, topic) => {
     topic,
     template: "txt",
   };
-  return async (topic, content = "", url = "") => {
+  return async (title, content = "", url = "") => {
     if (url) {
       content += "\n" + url;
     }
@@ -26,7 +26,7 @@ export default (token, topic) => {
       ["wechat", "extension"].map(async (channel) => {
         curl("https://www.pushplus.plus/send", {
           body: JSON.stringify({
-            topic,
+            title,
             content,
             ...conf,
           }),
