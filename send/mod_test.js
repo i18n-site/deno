@@ -1,15 +1,7 @@
-import { env, exit } from "node:process";
-import send from "./mod.js";
+#!/usr/bin/env bun
 
-const { Lark } = env;
+import pushplus from "./mod.js";
+import { PUSHPLUS, PUSHPLUS_TOPIC } from "../../../js0/conf/status/NOTIFY.js";
 
-if (!Lark) {
-  console.error("Lark is not set");
-  exit(1);
-}
-
-await send(
-  "test title",
-  "this is a test message",
-  "https://open.larksuite.com/document/client-docs/bot-v3/add-custom-bot",
-);
+const send = pushplus(PUSHPLUS, PUSHPLUS_TOPIC);
+await send("测试", "正文");
