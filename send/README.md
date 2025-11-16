@@ -3,21 +3,14 @@
 ## Usage
 
 ```js
-import { env, exit } from "node:process";
-import send from "./mod.js";
+#!/usr/bin/env bun
 
-const { Lark } = env;
+import * as CONF from "../../../js0/conf/status/NOTIFY.js";
+import Send from "./mod.js";
 
-if (!Lark) {
-  console.error("Lark is not set");
-  exit(1);
-}
+const send = Send(CONF);
 
-await send(
-  "test title",
-  "this is a test message",
-  "https://open.larksuite.com/document/client-docs/bot-v3/add-custom-bot",
-);
+await send("测试", "正文");
 ```
 
 ## Code
@@ -26,10 +19,22 @@ await send(
 
 ```js
 import Send from "./Send.js";
-import fromEnv from "./fromEnv.js";
-import { env } from "node:process";
+import pushplus from "@8v/pushplus";
+import lark from "@8v/lark";
 
-export default Send(fromEnv(env));
+export default (conf) => {
+  const send_li = [],
+    name_li = [];
+  if (conf.LARK) {
+    send_li.push(lark(conf.LARK));
+    name_li.push("lark");
+  }
+  if (conf.PUSHPLUS) {
+    send_li.push(pushplus(...conf.PUSHPLUS));
+    name_li.push("pushplus");
+  }
+  return Send(send_li, name_li);
+};
 ```
 
 ## About
