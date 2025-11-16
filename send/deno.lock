@@ -2,7 +2,9 @@
   "version": "5",
   "specifiers": {
     "jsr:@8v/curl@~0.1.6": "0.1.7",
+    "jsr:@8v/curl@~0.1.7": "0.1.7",
     "jsr:@8v/lark@~0.1.6": "0.1.6",
+    "jsr:@8v/pushplus@~0.1.4": "0.1.4",
     "npm:@8v/lark@~0.1.5": "0.1.5",
     "npm:@8v/pushplus@~0.1.4": "0.1.4"
   },
@@ -13,7 +15,13 @@
     "@8v/lark@0.1.6": {
       "integrity": "156a1b0b31f09225b898986c087fd8b8843eacf05bad54ed6b94b83963b11485",
       "dependencies": [
-        "jsr:@8v/curl"
+        "jsr:@8v/curl@~0.1.6"
+      ]
+    },
+    "@8v/pushplus@0.1.4": {
+      "integrity": "6f382550fe176d5b9450726e37328c5f3f031049a1f2c1e9322e30ac63d57c0e",
+      "dependencies": [
+        "jsr:@8v/curl@~0.1.7"
       ]
     }
   },
@@ -43,7 +51,8 @@
   },
   "workspace": {
     "dependencies": [
-      "jsr:@8v/lark@~0.1.6"
+      "jsr:@8v/lark@~0.1.6",
+      "jsr:@8v/pushplus@~0.1.4"
     ],
     "packageJson": {
       "dependencies": [
