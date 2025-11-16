@@ -11,5 +11,8 @@
         "no-ex-assign"
       ]
     }
+  },
+  "imports": {
+    "@8v/curl": "jsr:@8v/curl@^0.1.7"
   }
 }

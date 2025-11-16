@@ -1,7 +1,13 @@
 {
   "version": "5",
   "specifiers": {
+    "jsr:@8v/curl@~0.1.7": "0.1.7",
     "npm:@8v/curl@~0.1.7": "0.1.7"
+  },
+  "jsr": {
+    "@8v/curl@0.1.7": {
+      "integrity": "dde8d0e0f2e978b5431167800d14af18f3b088b36b7fd86ed99848a155b058b4"
+    }
   },
   "npm": {
     "@8v/curl@0.1.7": {
@@ -10,6 +16,9 @@
     }
   },
   "workspace": {
+    "dependencies": [
+      "jsr:@8v/curl@~0.1.7"
+    ],
     "packageJson": {
       "dependencies": [
         "npm:@8v/curl@~0.1.7"
