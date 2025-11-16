@@ -14,12 +14,12 @@ export default (token, topic) => {
     topic,
     template: "txt",
   };
-  return async (title, content = "", url = "") => {
+  return (title, content = "", url = "") => {
     if (url) {
       content += "\n" + url;
     }
     return Promise.all(
-      ["wechat", "extension"].map(async (channel) => {
+      ["wechat", "extension"].map((channel) => {
         curl("https://www.pushplus.plus/send", {
           method: "PUT",
           body: JSON.stringify({
