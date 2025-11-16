@@ -18,6 +18,7 @@
   "scripts": {},
   "type": "module",
   "dependencies": {
-    "@8v/lark": "^0.1.5"
+    "@8v/lark": "^0.1.5",
+    "@8v/pushplus": "^0.1.4"
   }
 }
