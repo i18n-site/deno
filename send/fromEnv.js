@@ -1,10 +1,12 @@
 import Lark from "@8v/lark";
 import WxPush from "@8v/wxpush";
 
-export const CONF = [...Object.entries({
-  Lark,
-  WxPush: (token_topic) => WxPush(...JSON.parse(token_topic)),
-})];
+export const CONF = [
+  ...Object.entries({
+    Lark,
+    WxPush: (token_topic) => WxPush(...JSON.parse(token_topic)),
+  }),
+];
 
 export default (env) => {
   const send_li = [],
