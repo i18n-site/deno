@@ -7,7 +7,8 @@
   },
   "license": "MulanPSL-2.0",
   "imports": {
-    "@8v/lark": "jsr:@8v/lark@^0.1.6"
+    "@8v/lark": "jsr:@8v/lark@^0.1.6",
+    "@8v/pushplus": "jsr:@8v/pushplus@^0.1.4"
   },
   "lint": {
     "rules": {
