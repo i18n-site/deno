@@ -15,7 +15,13 @@ const URL = 'https://www.pushplus.plus/send'
 export default (token, topic) => {
   const conf = {
     token,
-    topic
+    topic,
+    template: 'txt'
   }
-  return async (title, text = "", url = "") => {};
+  return async (title, text = "", url = "") => Promise.all(
+    [
+      'wechat',
+      'extension',
+    ]
+  );
 };
