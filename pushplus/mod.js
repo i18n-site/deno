@@ -18,8 +18,11 @@ export default (token, topic) => {
     topic,
     template: "txt",
   };
-  return async (topic, content = "", url = "") =>
-    Promise.all(
+  return async (topic, content = "", url = "") => {
+    if (url) {
+      content += "\n" + url;
+    }
+    return Promise.all(
       ["wechat", "extension"].map(async (channel) => {
         curl("https://www.pushplus.plus/send", {
           body: JSON.stringify({
@@ -29,4 +32,5 @@ export default (token, topic) => {
         });
       }),
     );
+  };
 };
