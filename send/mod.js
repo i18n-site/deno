@@ -1,5 +1,7 @@
 import Send from "./Send.js";
-import fromEnv from "./fromEnv.js";
-import { env } from "node:process";
 
-export default Send(fromEnv(env));
+export default (conf) => {
+  const send_li = [],
+    name_li = [];
+  return Send(send_li, name_li);
+};
