@@ -21,6 +21,7 @@ export default (token, topic) => {
     return Promise.all(
       ["wechat", "extension"].map(async (channel) => {
         curl("https://www.pushplus.plus/send", {
+          method: "PUT",
           body: JSON.stringify({
             title,
             content,
