@@ -1,5 +1,8 @@
 export default (send_li, name_li) => {
   return async (title, txt = "", url = "") => {
+    if (txt.conststructor != "String") {
+      txt = txt.toString();
+    }
     let pos = 0;
     for (
       const i of await Promise.allSettled(
