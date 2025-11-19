@@ -1,28 +1,30 @@
 {
   "version": "5",
   "specifiers": {
-    "npm:tldts@7.0.17": "7.0.17",
-    "npm:tldts@^7.0.17": "7.0.17"
+    "npm:tldts@7.0.18": "7.0.18",
+    "npm:tldts@^7.0.18": "7.0.18"
   },
   "npm": {
-    "tldts-core@7.0.17": {
-      "integrity": "sha512-DieYoGrP78PWKsrXr8MZwtQ7GLCUeLxihtjC1jZsW1DnvSMdKPitJSe8OSYDM2u5H6g3kWJZpePqkp43TfLh0g=="
+    "tldts-core@7.0.18": {
+      "integrity": "sha512-jqJC13oP4FFAahv4JT/0WTDrCF9Okv7lpKtOZUGPLiAnNbACcSg8Y8T+Z9xthOmRBqi/Sob4yi0TE0miRCvF7Q==",
+      "tarball": "https://mirrors.cloud.tencent.com/npm/tldts-core/-/tldts-core-7.0.18.tgz"
     },
-    "tldts@7.0.17": {
-      "integrity": "sha512-Y1KQBgDd/NUc+LfOtKS6mNsC9CCaH+m2P1RoIZy7RAPo3C3/t8X45+zgut31cRZtZ3xKPjfn3TkGTrctC2TQIQ==",
+    "tldts@7.0.18": {
+      "integrity": "sha512-lCcgTAgMxQ1JKOWrVGo6E69Ukbnx4Gc1wiYLRf6J5NN4HRYJtCby1rPF8rkQ4a6qqoFBK5dvjJ1zJ0F7VfDSvw==",
       "dependencies": [
         "tldts-core"
       ],
-      "bin": true
+      "bin": true,
+      "tarball": "https://mirrors.cloud.tencent.com/npm/tldts/-/tldts-7.0.18.tgz"
     }
   },
   "workspace": {
     "dependencies": [
-      "npm:tldts@^7.0.17"
+      "npm:tldts@^7.0.18"
     ],
     "packageJson": {
       "dependencies": [
-        "npm:tldts@7.0.17"
+        "npm:tldts@7.0.18"
       ]
     }
   }

@@ -13,6 +13,6 @@
     }
   },
   "imports": {
-    "tldts": "npm:tldts@^7.0.17"
+    "tldts": "npm:tldts@^7.0.18"
   }
 }
